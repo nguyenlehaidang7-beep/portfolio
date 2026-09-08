@@ -115,42 +115,6 @@
             margin-right: 8px; margin-bottom: 8px; font-size: 0.85rem; font-weight: 500;
         }
 
-        /* Video Embed */
-        .video-container {
-            position: relative;
-            padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
-            height: 0;
-            overflow: hidden;
-            margin-top: 15px;
-            margin-bottom: 10px;
-            border-radius: 8px;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-            background-color: #000;
-        }
-        .video-container iframe, .video-container video {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            border: none;
-        }
-        .video-placeholder {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            color: #94a3b8;
-            border: 2px dashed #cbd5e1;
-            border-radius: 8px;
-            background-color: #f8fafc;
-        }
-
         /* Document Buttons */
         .doc-btn {
             display: inline-flex;
@@ -167,19 +131,8 @@
         }
         .doc-btn:hover { opacity: 0.8; }
         .pdf-btn { background-color: #ef4444; } /* Red for PDF */
-        .word-btn { background-color: #2563eb; } /* Blue for Word */
         .github-btn { background-color: #1e293b; } /* Dark for GitHub */
         .doc-icon { margin-right: 8px; font-size: 1.1rem; }
-
-        /* Education */
-        .edu-box { 
-            background-color: #f8fafc; 
-            padding: 20px; 
-            border-left: 4px solid #10b981; 
-            border-radius: 0 6px 6px 0;
-        }
-        .edu-title { font-size: 1.2rem; font-weight: bold; color: #0f172a; }
-        .edu-date { color: #64748b; margin-bottom: 10px; font-size: 0.95rem; }
     </style>
 </head>
 <body>
@@ -190,7 +143,7 @@
             <div class="header-name">Nguyễn Lê Hải Đăng</div>
             <div class="header-title">Information Security Intern</div>
             <div class="header-desc">
-                Sinh viên năm cuối chuyên ngành Công nghệ thông tin với nền tảng vững chắc về mạng, Linux và tường lửa (Palo Alto, Fortigate). Định hướng trở thành chuyên gia rà soát lỗ hổng, giám sát hệ thống và phân tích sự cố bảo mật nhằm bảo vệ toàn diện hạ tầng IT doanh nghiệp.
+                Định hướng trở thành chuyên gia rà soát lỗ hổng, giám sát hệ thống và phân tích sự cố bảo mật nhằm bảo vệ toàn diện hạ tầng IT doanh nghiệp. Tập trung rèn luyện tư duy bảo mật từ hệ thống lõi đến tầng ứng dụng thông qua thực chiến.
             </div>
         </div>
         <div class="header-right">
@@ -243,7 +196,7 @@
 
         <h2 class="section-title"><span>Dự Án Cá Nhân (Personal Projects)</span></h2>
 
-        <!-- Project Mới: OverTheWire Bandit -->
+        <!-- Project: OverTheWire Bandit -->
         <div class="project-card">
             <div class="project-title">Thực hành & Báo cáo OverTheWire Bandit (Level 0 - 30)</div>
             <div class="project-meta">Thời gian: 08/2026 - 09/2026</div>
@@ -256,7 +209,6 @@
                 </ul>
             </div>
             
-            <!-- Nút tải/xem tài liệu DỰ ÁN MỚI -->
             <div style="margin-top: 15px; margin-bottom: 10px;">
                 <a href="Bandit level 0-level 30.pdf" target="_blank" class="doc-btn pdf-btn">
                     <span class="doc-icon">📄</span> Xem Báo Cáo Bandit (PDF)
@@ -275,92 +227,6 @@
             </div>
         </div>
 
-        <!-- Project 1: SOC IN A BOX -->
-        <div class="project-card">
-            <div class="project-title">Thiết kế, Triển khai và Vận hành Hệ thống NGSOTI (SOC IN A BOX)</div>
-            <div class="project-meta">Thời gian: 02/2026 - 04/2026</div>
-            <div class="project-details">
-                <ul>
-                    <li>Nghiên cứu và xây dựng hệ thống vận hành, giám sát tập trung trên nền tảng Server (Linux).</li>
-                    <li>Thiết lập các quy tắc (Rules) giám sát an toàn thông tin chuyên sâu.</li>
-                    <li>Trực tiếp kiểm thử kịch bản tự động ngăn chặn các tiến trình lỗi/độc hại nhằm bảo vệ dữ liệu nội bộ và đảm bảo tuân thủ cấu hình an toàn.</li>
-                    <li>Quản lý và tối ưu hóa tài nguyên phần cứng/phần mềm của các máy chủ.</li>
-                </ul>
-            </div>
-            
-            <div style="margin-top: 15px; margin-bottom: 15px;">
-                <a href="07_Nguyen_Le_Hai_Dang_23010129_SOC_IN_A_BOX_2.docx" class="doc-btn word-btn">
-                    <span class="doc-icon">📝</span> Tải Báo Cáo SOC (Word)
-                </a>
-            </div>
-            
-            <div class="video-container">                
-                <iframe src="https://www.youtube.com/embed/S8DYqzD64uY" title="Demo SOC IN A BOX" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> 
-            </div>
-            
-            <div class="tech-stack">
-                <span class="tech-badge">Linux Server</span>
-                <span class="tech-badge">Security Rules</span>
-                <span class="tech-badge">Automation Scripting</span>
-                <span class="tech-badge">Wazuh SIEM</span>
-            </div>
-        </div>
-
-        <!-- Project 2: PKI & S/MIME -->
-        <div class="project-card">
-            <div class="project-title">Triển khai hạ tầng khóa công khai PKI & Hỗ trợ người dùng</div>
-            <div class="project-meta">Thời gian: 09/2025 - 12/2025</div>
-            <div class="project-details">
-                <ul>
-                    <li>Triển khai hệ thống cấp phát chứng thư số (AD CS, OpenSSL).</li>
-                    <li>Hỗ trợ người dùng cấu hình bảo mật email bằng giao thức S/MIME, đảm bảo tính toàn vẹn và xác thực.</li>
-                </ul>
-            </div>
-            
-            <div style="margin-top: 15px; margin-bottom: 10px;">
-                <a href="Nguyen_Le_Hai_Dang_23010129_3.pdf" target="_blank" class="doc-btn pdf-btn">
-                    <span class="doc-icon">📄</span> Xem Báo Cáo PKI (PDF)
-                </a>
-                <a href="Phan_thuc_nghiem_Ung_dung_PKI_trong_bao_mat_thu_dien_tu_S_2.docx" class="doc-btn word-btn">
-                    <span class="doc-icon">📝</span> Tải Thực Nghiệm PKI (Word)
-                </a>
-            </div>
-
-            <div class="tech-stack">
-                <span class="tech-badge">PKI</span>
-                <span class="tech-badge">AD CS</span>
-                <span class="tech-badge">OpenSSL</span>
-                <span class="tech-badge">S/MIME</span>
-            </div>
-        </div>
-
-        <!-- Project 3 -->
-        <div class="project-card">
-            <div class="project-title">Thiết kế & Vận hành hệ thống mạng doanh nghiệp</div>
-            <div class="project-meta">Thời gian: 05/2025 - 08/2025</div>
-            <div class="project-details">
-                <ul>
-                    <li>Thiết kế topology mạng, cấu hình VLAN, Trunking kết nối an toàn giữa các phòng ban.</li>
-                    <li>Cấu hình tường lửa (Palo Alto/Fortigate) để kiểm soát nghiêm ngặt quyền truy cập của người dùng nội bộ.</li>
-                    <li>Thiết lập kênh truyền mã hóa IPsec VPN Site-to-Site đảm bảo an toàn kết nối dữ liệu.</li>
-                    <li>Triển khai công cụ PRTG để liên tục giám sát tình trạng hoạt động và phát hiện sớm các bất thường của hạ tầng IT.</li>
-                </ul>
-            </div>
-            <div class="tech-stack">
-                <span class="tech-badge">VLAN / Trunking</span>
-                <span class="tech-badge">Palo Alto / Fortigate</span>
-                <span class="tech-badge">IPsec VPN</span>
-                <span class="tech-badge">PRTG Network Monitor</span>
-            </div>
-        </div>
-
-        <h2 class="section-title"><span>Học Vấn (Education)</span></h2>
-        <div class="edu-box">
-            <div class="edu-title">Đại học Gia Định (GDU)</div>
-            <div class="edu-date">09/2023 - Nay</div>
-            <div><strong>Chuyên ngành:</strong> Công nghệ thông tin</div>
-            <div style="margin-top: 5px;"><strong>Điểm trung bình (GPA):</strong> <span style="color: #059669; font-weight: bold;">3.38 / 4.0</span></div>
-        </div>
     </div>
 </div>
 
