@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="vi">
 <head>
@@ -169,6 +168,7 @@
         .doc-btn:hover { opacity: 0.8; }
         .pdf-btn { background-color: #ef4444; } /* Red for PDF */
         .word-btn { background-color: #2563eb; } /* Blue for Word */
+        .github-btn { background-color: #1e293b; } /* Dark for GitHub */
         .doc-icon { margin-right: 8px; font-size: 1.1rem; }
 
         /* Education */
@@ -243,6 +243,38 @@
 
         <h2 class="section-title"><span>Dự Án Cá Nhân (Personal Projects)</span></h2>
 
+        <!-- Project Mới: OverTheWire Bandit -->
+        <div class="project-card">
+            <div class="project-title">Thực hành & Báo cáo OverTheWire Bandit (Level 0 - 30)</div>
+            <div class="project-meta">Thời gian: 08/2026 - 09/2026</div>
+            <div class="project-details">
+                <ul>
+                    <li>Giải quyết thành công chuỗi thử thách bảo mật từ Level 0 đến Level 30 trên hệ thống OverTheWire.</li>
+                    <li>Sử dụng linh hoạt giao diện dòng lệnh (CLI) trên Linux, kết hợp các công cụ tìm kiếm và xử lý luồng dữ liệu (grep, find, tar) cũng như thao tác điều khiển qua mạng (ssh, nc, nmap).</li>
+                    <li>Khai thác và phân tích cơ chế phân quyền (SUID/EUID), kết hợp tự động hóa kịch bản với Shell Script, Cron và quản lý mã nguồn bằng Git.</li>
+                    <li>Thực hành giải mã các định dạng (Base64, ROT13) và thiết lập kết nối đường hầm mã hóa (SSL/TLS).</li>
+                </ul>
+            </div>
+            
+            <!-- Nút tải/xem tài liệu DỰ ÁN MỚI -->
+            <div style="margin-top: 15px; margin-bottom: 10px;">
+                <a href="Bandit level 0-level 30.pdf" target="_blank" class="doc-btn pdf-btn">
+                    <span class="doc-icon">📄</span> Xem Báo Cáo Bandit (PDF)
+                </a>
+                <a href="https://github.com/nguyenlehaidang7-beep" target="_blank" class="doc-btn github-btn">
+                    <span class="doc-icon">💻</span> Xem Code trên GitHub
+                </a>
+            </div>
+
+            <div class="tech-stack">
+                <span class="tech-badge">Linux CLI</span>
+                <span class="tech-badge">Bash Scripting</span>
+                <span class="tech-badge">Cybersecurity</span>
+                <span class="tech-badge">SSH & SSL/TLS</span>
+                <span class="tech-badge">Git</span>
+            </div>
+        </div>
+
         <!-- Project 1: SOC IN A BOX -->
         <div class="project-card">
             <div class="project-title">Thiết kế, Triển khai và Vận hành Hệ thống NGSOTI (SOC IN A BOX)</div>
@@ -256,7 +288,6 @@
                 </ul>
             </div>
             
-            <!-- Nút tải/xem tài liệu DỰ ÁN 1 -->
             <div style="margin-top: 15px; margin-bottom: 15px;">
                 <a href="07_Nguyen_Le_Hai_Dang_23010129_SOC_IN_A_BOX_2.docx" class="doc-btn word-btn">
                     <span class="doc-icon">📝</span> Tải Báo Cáo SOC (Word)
@@ -286,7 +317,6 @@
                 </ul>
             </div>
             
-            <!-- Nút tải/xem tài liệu DỰ ÁN 2 -->
             <div style="margin-top: 15px; margin-bottom: 10px;">
                 <a href="Nguyen_Le_Hai_Dang_23010129_3.pdf" target="_blank" class="doc-btn pdf-btn">
                     <span class="doc-icon">📄</span> Xem Báo Cáo PKI (PDF)
