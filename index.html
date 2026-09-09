@@ -148,14 +148,6 @@
             padding-bottom: 8px;
         }
 
-        .subsection-title {
-            font-size: 1.15rem;
-            color: #0284c7;
-            margin-top: 25px;
-            margin-bottom: 15px;
-            font-weight: 700;
-        }
-
         .subsection-description {
             color: #64748b;
             margin-top: -5px;
@@ -330,23 +322,6 @@
 
 
         /* =========================================================
-           REPORT LIST
-        ========================================================= */
-
-        .report-list {
-            margin-top: 10px;
-            margin-bottom: 5px;
-        }
-
-        .report-label {
-            display: block;
-            font-weight: 600;
-            color: #475569;
-            margin-bottom: 8px;
-        }
-
-
-        /* =========================================================
            VIDEO
         ========================================================= */
 
@@ -455,6 +430,7 @@
             .project-card {
                 padding: 15px;
             }
+
         }
 
     </style>
@@ -564,7 +540,11 @@
         ====================================================== -->
 
         <h2 class="section-title">
-            <span>Kỹ Năng Chuyên Môn (Technical Skills)</span>
+
+            <span>
+                Kỹ Năng Chuyên Môn (Technical Skills)
+            </span>
+
         </h2>
 
 
@@ -780,8 +760,6 @@
             </div>
 
 
-            <!-- SOC DOCUMENT -->
-
             <div class="document-section">
 
                 <a
@@ -801,8 +779,6 @@
             </div>
 
 
-            <!-- SOC VIDEO -->
-
             <div class="video-container">
 
                 <iframe
@@ -814,8 +790,6 @@
 
             </div>
 
-
-            <!-- SOC TECHNOLOGY -->
 
             <div class="tech-stack">
 
@@ -858,7 +832,7 @@
 
             <div class="project-title">
 
-                Thiết kế & Triển khai Hệ thống
+                Thiết kế & Vận hành Hệ thống
                 Network Security Doanh nghiệp
 
             </div>
@@ -876,133 +850,38 @@
                 <ul>
 
                     <li>
-                        Thiết kế và triển khai mô hình mạng
-                        doanh nghiệp trên môi trường mô phỏng,
-                        thực hành phân chia và quản lý các
-                        vùng mạng bằng VLAN.
+                        Thiết kế topology mạng doanh nghiệp
+                        và phân chia hệ thống bằng VLAN.
                     </li>
 
                     <li>
-                        Cấu hình Trunking, Routing,
-                        EtherChannel, HSRP, DHCP và NAT/PAT
-                        nhằm đảm bảo khả năng kết nối và
-                        tính sẵn sàng của hệ thống.
+                        Cấu hình Trunking và định tuyến
+                        nhằm đảm bảo kết nối giữa các
+                        phân đoạn mạng.
                     </li>
 
                     <li>
-                        Thiết kế và triển khai hệ thống
-                        tường lửa thế hệ mới (NGFW) nhằm
-                        kiểm soát lưu lượng, phân vùng mạng
-                        và áp dụng chính sách bảo mật.
+                        Cấu hình Firewall Palo Alto /
+                        Fortigate để kiểm soát và
+                        giới hạn quyền truy cập.
                     </li>
 
                     <li>
-                        Thiết lập VPN Site-to-Site bằng IPsec
+                        Thiết lập IPsec VPN Site-to-Site
                         nhằm bảo vệ dữ liệu truyền giữa
-                        các mạng doanh nghiệp.
+                        các mạng.
                     </li>
 
                     <li>
-                        Triển khai IDS/IPS Snort để giám sát,
-                        phát hiện và phân tích các hoạt động
-                        bất thường trên lưu lượng mạng.
-                    </li>
-
-                    <li>
-                        Triển khai PRTG để giám sát thiết bị
-                        mạng và server, thiết lập cảnh báo
-                        và theo dõi hiệu suất hạ tầng.
-                    </li>
-
-                    <li>
-                        Thực hành tích hợp các giải pháp
-                        Network Security và Monitoring
-                        nhằm xây dựng mô hình phòng thủ
-                        nhiều lớp cho hệ thống doanh nghiệp.
+                        Triển khai PRTG để giám sát tình trạng
+                        hoạt động và phát hiện bất thường
+                        của hạ tầng IT.
                     </li>
 
                 </ul>
 
             </div>
 
-
-            <!-- =================================================
-                 NETWORK SECURITY REPORTS
-            ================================================== -->
-
-            <div class="document-section">
-
-                <span class="report-label">
-                    📚 Báo cáo học thuật & tài liệu thực hành
-                </span>
-
-
-                <!-- REPORT 03 - PRTG -->
-
-                <div class="report-list">
-
-                    <a
-                        href="03_23010129_NguyenLeHaiDang.pdf"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        class="doc-btn pdf-btn">
-
-                        <span class="doc-icon">
-                            📄
-                        </span>
-
-                        Báo cáo PRTG - Giám sát mạng & Server
-
-                    </a>
-
-                </div>
-
-
-                <!-- REPORT 04 - NGFW -->
-
-                <div class="report-list">
-
-                    <a
-                        href="04_23010129_Nguyễn%20Lê%20Hải%20Đăng.pdf"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        class="doc-btn pdf-btn">
-
-                        <span class="doc-icon">
-                            📄
-                        </span>
-
-                        Báo cáo NGFW - Tường lửa thế hệ mới
-
-                    </a>
-
-                </div>
-
-
-                <!-- REPORT 06 - VPN + SNORT -->
-
-                <div class="report-list">
-
-                    <a
-                        href="06_23010129_Nguyen%20Le%20Hai%20Dang.pdf"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        class="doc-btn pdf-btn">
-
-                        <span class="doc-icon">
-                            📄
-                        </span>
-
-                        Báo cáo VPN & IDS/IPS Snort
-
-                    </a>
-
-                </div>
-
-            </div>
-
-
-            <!-- NETWORK TECHNOLOGY -->
 
             <div class="tech-stack">
 
@@ -1019,26 +898,6 @@
                 </span>
 
                 <span class="tech-badge">
-                    EtherChannel
-                </span>
-
-                <span class="tech-badge">
-                    HSRP
-                </span>
-
-                <span class="tech-badge">
-                    DHCP
-                </span>
-
-                <span class="tech-badge">
-                    NAT/PAT
-                </span>
-
-                <span class="tech-badge">
-                    ACL
-                </span>
-
-                <span class="tech-badge">
                     Palo Alto
                 </span>
 
@@ -1047,23 +906,11 @@
                 </span>
 
                 <span class="tech-badge">
-                    NGFW
-                </span>
-
-                <span class="tech-badge">
                     IPsec VPN
                 </span>
 
                 <span class="tech-badge">
-                    Snort IDS/IPS
-                </span>
-
-                <span class="tech-badge">
                     PRTG
-                </span>
-
-                <span class="tech-badge">
-                    GNS3
                 </span>
 
             </div>
@@ -1109,8 +956,8 @@
                     </li>
 
                     <li>
-                        Cấu hình bảo mật Email bằng giao thức
-                        S/MIME.
+                        Cấu hình bảo mật Email bằng
+                        giao thức S/MIME.
                     </li>
 
                     <li>
@@ -1123,8 +970,6 @@
 
             </div>
 
-
-            <!-- PKI DOCUMENTS -->
 
             <div class="document-section">
 
@@ -1160,8 +1005,6 @@
             </div>
 
 
-            <!-- PKI TECHNOLOGY -->
-
             <div class="tech-stack">
 
                 <span class="tech-badge">
@@ -1191,13 +1034,13 @@
 
 
         <!-- =====================================================
-             SELF LEARNING
+             SELF-LEARNING
         ====================================================== -->
 
         <h2 class="section-title">
 
             <span>
-                Self-Learning và các dự án cá nhân
+                Self-Learning và các dự án cá nhân.
             </span>
 
         </h2>
@@ -1205,8 +1048,8 @@
 
         <div class="subsection-description">
 
-            Các nội dung tự nghiên cứu và thực hành riêng của cá nhân.
-            Sẽ tiếp tục cập nhật khi hoàn thành thêm các nội dung mới.
+            Các nội dung tự nghiên cứu và thực hành riêng của cá nhân
+            (Sau này sẽ update thêm).
 
         </div>
 
@@ -1222,7 +1065,7 @@
             <div class="project-title">
 
                 OverTheWire Bandit -
-                Level 0 đến Level 30
+                từ Level 0 đến Level 30.
 
             </div>
 
@@ -1262,13 +1105,12 @@
 
                     <li>
                         Thực hành xử lý và giải mã dữ liệu
-                        bằng Base64, ROT13 và các cơ chế
-                        mã hóa / kết nối SSL/TLS.
+                        bằng Base64, ROT13 và SSL/TLS.
                     </li>
 
                     <li>
-                        Sử dụng Git để quản lý và lưu trữ
-                        quá trình học tập và tài liệu thực hành.
+                        Sử dụng Git để quản lý quá trình
+                        học tập và tài liệu thực hành.
                     </li>
 
                 </ul>
@@ -1276,21 +1118,23 @@
             </div>
 
 
-            <!-- BANDIT DOCUMENT -->
+            <!-- =================================================
+                 BANDIT PROJECT LINKS
+            ================================================== -->
 
             <div class="document-section">
 
                 <a
-                    href="Bandit%20level%200-level%2030.pdf"
+                    href="https://nguyenlehaidang7-beep.github.io/Bandit_Level-0_Level-30/"
                     target="_blank"
                     rel="noopener noreferrer"
-                    class="doc-btn pdf-btn">
+                    class="doc-btn github-btn">
 
                     <span class="doc-icon">
-                        📄
+                        💻
                     </span>
 
-                    Xem Báo Cáo Bandit
+                    Xem Project Bandit
 
                 </a>
 
@@ -1302,32 +1146,15 @@
                     class="doc-btn github-btn">
 
                     <span class="doc-icon">
-                        💻
+                        📁
                     </span>
 
                     GitHub Repository
 
                 </a>
 
-
-                <a
-                    href="https://nguyenlehaidang7-beep.github.io/Bandit_Level-0_Level-30/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    class="doc-btn github-btn">
-
-                    <span class="doc-icon">
-                        🌐
-                    </span>
-
-                    Xem Project Bandit
-
-                </a>
-
             </div>
 
-
-            <!-- BANDIT TECHNOLOGY -->
 
             <div class="tech-stack">
 
@@ -1345,14 +1172,6 @@
 
                 <span class="tech-badge">
                     SSH
-                </span>
-
-                <span class="tech-badge">
-                    Netcat
-                </span>
-
-                <span class="tech-badge">
-                    SUID / EUID
                 </span>
 
                 <span class="tech-badge">
