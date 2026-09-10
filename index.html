@@ -148,6 +148,14 @@
             padding-bottom: 8px;
         }
 
+        .subsection-title {
+            font-size: 1.15rem;
+            color: #0284c7;
+            margin-top: 25px;
+            margin-bottom: 15px;
+            font-weight: 700;
+        }
+
         .subsection-description {
             color: #64748b;
             margin-top: -5px;
@@ -322,6 +330,23 @@
 
 
         /* =========================================================
+           REPORT LIST
+        ========================================================= */
+
+        .report-list {
+            margin-top: 10px;
+            margin-bottom: 5px;
+        }
+
+        .report-label {
+            display: block;
+            font-weight: 600;
+            color: #475569;
+            margin-bottom: 8px;
+        }
+
+
+        /* =========================================================
            VIDEO
         ========================================================= */
 
@@ -430,7 +455,6 @@
             .project-card {
                 padding: 15px;
             }
-
         }
 
     </style>
@@ -540,11 +564,7 @@
         ====================================================== -->
 
         <h2 class="section-title">
-
-            <span>
-                Kỹ Năng Chuyên Môn (Technical Skills)
-            </span>
-
+            <span>Kỹ Năng Chuyên Môn (Technical Skills)</span>
         </h2>
 
 
@@ -760,6 +780,8 @@
             </div>
 
 
+            <!-- SOC DOCUMENT -->
+
             <div class="document-section">
 
                 <a
@@ -779,6 +801,8 @@
             </div>
 
 
+            <!-- SOC VIDEO -->
+
             <div class="video-container">
 
                 <iframe
@@ -790,6 +814,8 @@
 
             </div>
 
+
+            <!-- SOC TECHNOLOGY -->
 
             <div class="tech-stack">
 
@@ -832,7 +858,7 @@
 
             <div class="project-title">
 
-                Thiết kế & Vận hành Hệ thống
+                Thiết kế & Triển khai Hệ thống
                 Network Security Doanh nghiệp
 
             </div>
@@ -850,38 +876,133 @@
                 <ul>
 
                     <li>
-                        Thiết kế topology mạng doanh nghiệp
-                        và phân chia hệ thống bằng VLAN.
+                        Thiết kế và triển khai mô hình mạng
+                        doanh nghiệp trên môi trường mô phỏng,
+                        thực hành phân chia và quản lý các
+                        vùng mạng bằng VLAN.
                     </li>
 
                     <li>
-                        Cấu hình Trunking và định tuyến
-                        nhằm đảm bảo kết nối giữa các
-                        phân đoạn mạng.
+                        Cấu hình Trunking, Routing,
+                        EtherChannel, HSRP, DHCP và NAT/PAT
+                        nhằm đảm bảo khả năng kết nối và
+                        tính sẵn sàng của hệ thống.
                     </li>
 
                     <li>
-                        Cấu hình Firewall Palo Alto /
-                        Fortigate để kiểm soát và
-                        giới hạn quyền truy cập.
+                        Thiết kế và triển khai hệ thống
+                        tường lửa thế hệ mới (NGFW) nhằm
+                        kiểm soát lưu lượng, phân vùng mạng
+                        và áp dụng chính sách bảo mật.
                     </li>
 
                     <li>
-                        Thiết lập IPsec VPN Site-to-Site
+                        Thiết lập VPN Site-to-Site bằng IPsec
                         nhằm bảo vệ dữ liệu truyền giữa
-                        các mạng.
+                        các mạng doanh nghiệp.
                     </li>
 
                     <li>
-                        Triển khai PRTG để giám sát tình trạng
-                        hoạt động và phát hiện bất thường
-                        của hạ tầng IT.
+                        Triển khai IDS/IPS Snort để giám sát,
+                        phát hiện và phân tích các hoạt động
+                        bất thường trên lưu lượng mạng.
+                    </li>
+
+                    <li>
+                        Triển khai PRTG để giám sát thiết bị
+                        mạng và server, thiết lập cảnh báo
+                        và theo dõi hiệu suất hạ tầng.
+                    </li>
+
+                    <li>
+                        Thực hành tích hợp các giải pháp
+                        Network Security và Monitoring
+                        nhằm xây dựng mô hình phòng thủ
+                        nhiều lớp cho hệ thống doanh nghiệp.
                     </li>
 
                 </ul>
 
             </div>
 
+
+            <!-- =================================================
+                 NETWORK SECURITY REPORTS
+            ================================================== -->
+
+            <div class="document-section">
+
+                <span class="report-label">
+                    📚 Báo cáo học thuật & tài liệu thực hành
+                </span>
+
+
+                <!-- REPORT 03 - PRTG -->
+
+                <div class="report-list">
+
+                    <a
+                        href="03_23010129_NguyenLeHaiDang.pdf"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="doc-btn pdf-btn">
+
+                        <span class="doc-icon">
+                            📄
+                        </span>
+
+                        Báo cáo PRTG - Giám sát mạng & Server
+
+                    </a>
+
+                </div>
+
+
+                <!-- REPORT 04 - NGFW -->
+
+                <div class="report-list">
+
+                    <a
+                        href="04_23010129_Nguyễn%20Lê%20Hải%20Đăng.pdf"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="doc-btn pdf-btn">
+
+                        <span class="doc-icon">
+                            📄
+                        </span>
+
+                        Báo cáo NGFW - Tường lửa thế hệ mới
+
+                    </a>
+
+                </div>
+
+
+                <!-- REPORT 06 - VPN + SNORT -->
+
+                <div class="report-list">
+
+                    <a
+                        href="06_23010129_Nguyen%20Le%20Hai%20Dang.pdf"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="doc-btn pdf-btn">
+
+                        <span class="doc-icon">
+                            📄
+                        </span>
+
+                        Báo cáo VPN & IDS/IPS Snort
+
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <!-- NETWORK TECHNOLOGY -->
 
             <div class="tech-stack">
 
@@ -898,6 +1019,26 @@
                 </span>
 
                 <span class="tech-badge">
+                    EtherChannel
+                </span>
+
+                <span class="tech-badge">
+                    HSRP
+                </span>
+
+                <span class="tech-badge">
+                    DHCP
+                </span>
+
+                <span class="tech-badge">
+                    NAT/PAT
+                </span>
+
+                <span class="tech-badge">
+                    ACL
+                </span>
+
+                <span class="tech-badge">
                     Palo Alto
                 </span>
 
@@ -906,11 +1047,23 @@
                 </span>
 
                 <span class="tech-badge">
+                    NGFW
+                </span>
+
+                <span class="tech-badge">
                     IPsec VPN
                 </span>
 
                 <span class="tech-badge">
+                    Snort IDS/IPS
+                </span>
+
+                <span class="tech-badge">
                     PRTG
+                </span>
+
+                <span class="tech-badge">
+                    GNS3
                 </span>
 
             </div>
@@ -956,8 +1109,8 @@
                     </li>
 
                     <li>
-                        Cấu hình bảo mật Email bằng
-                        giao thức S/MIME.
+                        Cấu hình bảo mật Email bằng giao thức
+                        S/MIME.
                     </li>
 
                     <li>
@@ -970,6 +1123,8 @@
 
             </div>
 
+
+            <!-- PKI DOCUMENTS -->
 
             <div class="document-section">
 
@@ -1005,6 +1160,8 @@
             </div>
 
 
+            <!-- PKI TECHNOLOGY -->
+
             <div class="tech-stack">
 
                 <span class="tech-badge">
@@ -1033,7 +1190,7 @@
 
 
 
-        <!-- =====================================================
+         <!-- =====================================================
              SELF-LEARNING
         ====================================================== -->
 
